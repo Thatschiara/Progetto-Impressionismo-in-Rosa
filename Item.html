@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Imposta il set di caratteri a UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura la viewport per il responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titolo della pagina -->
+    <title>Donna alla Toilette</title>
+      <!--Immagine Favicon-->
+      <link rel="shortcut icon" href="img/Iconasito.png">
+    <!-- Includi il CSS di Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Includi il foglio di stile personalizzato -->
+    <link rel="stylesheet" href="css/css.css">
+    <!-- Includi le icone di Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar di navigazione -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fde3f3;">
+        <a class="navbar-brand" href="Index.html">
+            <img src="img/Iconasito.png" width="30" height="30" class="d-inline-block align-top" alt="">Impressionismo In Rosa</a>
+        
+        <!---Bottone per il menu mobile-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!--Link di navigazione-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="Catalogo.html">Catalogo <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Le protagoniste
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="BertheMorisot.html">Berthe Morisot</a>
+                  <a class="dropdown-item" href="#">Mary Cassatt</a>
+                  <a class="dropdown-item" href="#">Eva Gonzales</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">L'impatto sul femminismo</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Barra di ricerca -->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+        </form>
+    </nav>
+
+    <!-- Briciole di pane -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="Catalogo.html">Catalogo</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Donna alla Toilette</li>
+        </ol>
+    </nav>
+
+<!-- Contenuto principale per Item -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sezione Immagine principale e Descrizione -->
+        <div class="col-12">
+            <div class="border p-3">
+                <div class="row">
+                    <!-- Sezione Immagine principale -->
+                    <div class="col-md-7">
+                        <div class="container-fluid box">
+                            <img src="img/donna-alla-toilette.jpeg" class="card-img-top" alt="donna-alla-toilette">
+                        </div>
+                    </div>
+
+                    <!-- Sezione Descrizione -->
+                    <div class="col-md-5 box-testo">
+                        <div class="card-body">
+                            <h3 class="card-title">Donna Alla Toilette</h3>
+                            <p class="card-text"><strong>Artista:</strong> Berthe Morisot</p>
+                            <p class="card-text"><strong>Anno:</strong> 1875-1880</p>
+                            <p class="card-text"><strong>Genere:</strong> Pittura di genere</p>
+                            <p class="card-text"><strong>Tipo di tecnica:</strong> Olio su tela</p>
+                            <p class="card-text"><strong>Corrente artistica:</strong> Impressionismo</p>
+                            <p class="card-text"><strong>Luogo:</strong> Art Institute of Chicago - Stati Uniti d'America</p>
+                            <p class="card-text"><strong>Descrizione:</strong> La Donna alla toilette affronta uno dei temi prediletti degli impressionisti, che ritrassero di frequente donne intente alla cura del loro corpo e della loro igiene personale per sondarle nella loro intimità, in pose naturali che si confacevano all'indole di questi artisti. Berthe Morisot riesce nell'intento di creare una composizione fine e delicata grazie alla sua sensibilità femminile che si tramuta in pennellate lievi, che assumono toni diafani, perlacei.</p>
+                            <p>L'erotismo che contraddistingueva questi soggetti qui è solo vagamente accennato dalla spallina sinistra del vestito e dal gesto della ragazza che sta per sciogliere i capelli e a breve inizierà a spogliarsi di fronte allo specchio. Lo specchio, riporta sul bordo inferiore la firma dell'artista, come se lo specchio riflettesse la sua femminilità e il suo animo, conferendo al tutto l'apparenza di un autoritratto ideale.</p>
+                            <!-- Bottone per salvare in galleria -->
+                             <button class="btn btn-rosa-scuro mt-3">
+                            <i class="fas fa-plus"></i> Salva in Galleria
+                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Sezione può interessarti anche-->
+    <div class="container custom-section">
+        <div class="row mt-4">
+            <div class="col-12">
+                <h5 class="custom-header">Può interessarti anche:</h5>
+                <div class="row">
+                    <!-- Card 1: Lo stile di Morisot -->
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <img src="img/berthemorisotstile.webp" class="card-img-top" alt="Lo stile di Morisot">
+                            <div class="card-body">
+                                <h5 class="card-title">Lo stile di Morisot</h5>
+                                <p class="card-text">Scopri di più sullo stile unico di Berthe Morisot e come ha contribuito al movimento impressionista.</p>
+                                <a href="#" class="btn btn-rosa-scuro mt-3">Scopri di più</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: La vita di Berthe Morisot -->
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <img src="img/berthemorisot.jpg" class="card-img-top" alt="Vita di Berthe Morisot">
+                            <div class="card-body">
+                                <h5 class="card-title">La vita di Morisot</h5>
+                                <p class="card-text">Esplora la vita di Berthe Morisot, una delle figure più importanti dell'impressionismo francese.</p>
+                                <a href="BertheMorisot.html" class="btn btn-rosa-scuro mt-3">Scopri di più</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Altre opere di Morisot -->
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <img src="img/laculla.jpg" class="card-img-top" alt="Altre opere di Morisot">
+                            <div class="card-body">
+                                <h5 class="card-title">Altre opere di Morisot</h5>
+                                <p class="card-text">Esplora altre opere d'arte di Berthe Morisot e il suo contributo all'arte impressionista.</p>
+                                <a href="#" class="btn btn-rosa-scuro mt-3">Scopri di più</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4: Impressionismo -->
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <img src="img/tickets.png" class="card-img-top" alt="Impressionismo">
+                            <div class="card-body">
+                                <h5 class="card-title">Impressionismo</h5>
+                                <p class="card-text">Scopri di più sul movimento impressionista, lo stile caratterizzante e i suoi artisti più rappresentativi.</p>
+                                <a href="#" class="btn btn-rosa-scuro mt-3">Scopri di più</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione Commenti e Registrazione-->
+<section class="comments-newsletter py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- Colonna per l'immagine -->
+            <div class="col-md-4 mb-4">
+                <img src="img/1880-mary-cassat-donna-in-nero-allopera..jpg" class="img-fluid rounded-lg larger-image" alt="Donna all'opera">
+            </div>
+            <!-- Colonna per Commenti -->
+            <div class="col-md-8">
+                <h2 class="text-rosa-scuro">Lascia un commento!</h2>
+                <p>Facci sapere cosa ne pensi, lasciando un commento qua sotto</p>
+                <form>
+                    <div class="form-group">
+                        <label for="commentName">Nome</label>
+                        <input type="text" class="form-control" id="commentName" placeholder="Inserisci il tuo nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="commentText">Commento</label>
+                        <textarea class="form-control" id="commentText" rows="3" placeholder="Scrivi il tuo commento"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-rosa-scuro">Invia Commento</button>
+                </form>
+
+                <!-- Divisorio -->
+                <hr>
+
+                <!-- Sezione Registrazione -->
+                <div class="col-md-8">
+                    <h3 class="text-rosa-scuro">Salva questo quadro nella tua galleria!</h3>
+                    <p>Registrati per salvare i tuoi quadri preferiti in galleria!</p>
+                    <button class="btn btn-rosa-scuro mt-3">Crea il tuo account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="custom-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p>&copy; Copyright (c) 2024 by Chiara Fanì |  Licenza Creative Commons | Chiara Fanì IU a.a. 2023/2024</p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <a href="WebProject.html" class="text-white mr-3">| Web Project Plan |</a>
+                <span>Ci trovi anche su:</span>
+                <a href="#" class="text-white ml-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white ml-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white ml-3"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

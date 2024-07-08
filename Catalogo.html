@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Imposta il set di caratteri a UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura la viewport per il responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titolo della pagina -->
+    <title>Catalogo opere</title>
+      <!--Immagine Favicon-->
+      <link rel="shortcut icon" href="img/Iconasito.png">
+    <!-- Includi il CSS di Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Includi il foglio di stile personalizzato -->
+    <link rel="stylesheet" href="css/css.css">
+    <!-- Includi le icone di Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar di navigazione -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fde3f3;">
+        <a class="navbar-brand" href="Index.html">
+            <img src="img/Iconasito.png" width="30" height="30" class="d-inline-block align-top" alt="">Impressionismo In Rosa</a>
+        
+        <!---Bottone per il menu mobile-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!--Link di navigazione-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="Catalogo.html">Catalogo <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Le protagoniste
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="BertheMorisot.html">Berthe Morisot</a>
+                  <a class="dropdown-item" href="#">Mary Cassatt</a>
+                  <a class="dropdown-item" href="#">Eva Gonzales</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">L'impatto sul femminismo</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Barra di ricerca -->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+        </form>
+    </nav>
+
+    <!-- Briciole di pane -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Catalogo</li>
+        </ol>
+    </nav>
+
+    <!-- Sezione Catalogo -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Barra di navigazione a sinistra -->
+            <div class="sidebar" id="sidebar" style="background-color: #fde3f3;">
+                <h5>Filtra per anno</h5>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="1860-1870"> 1860 - 1870
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="1870-1880"> 1870 - 1880
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="1880-1890"> 1880 - 1890
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="1890-1900"> 1890 - 1900
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="1900-1917"> 1900 - 1917
+                    </a>
+                </div>
+                <h5 class="mt-4">Filtra per artista</h5>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="cezanne"> Berthe Morisot
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="degas"> Eva Gonzales
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="gauguin"> Mary Cassatt
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <input type="checkbox" id="manet"> Eduard Manet
+                    </a>
+                </div>
+            </div>
+
+            <!-- Griglia delle opere -->
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Catalogo delle Opere</h1>
+        <div class="form-inline">
+            <label for="sortOrder" class="mr-2">Ordina per:</label>
+            <select class="form-control" id="sortOrder">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/donna-alla-toilette.jpeg" class="card-img-top" alt="Quadro 1">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Donna alla Toilette</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Berthe Morisot<br>
+                        <strong>Anno:</strong> 1875-1880
+                    </p>
+                    <a href="Item.html" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/bimbasunapoltronablu.jpg" class="card-img-top" alt="Quadro 2">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Bimba Su Una Poltrona Blu</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Mary Cassatt<br>
+                        <strong>Anno:</strong> 1878
+                    </p>
+                    <a href="#" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/TataeBambino.jpg" class="card-img-top" alt="Quadro 3">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Tata e Bambino</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Eva Gonzalès<br>
+                        <strong>Anno:</strong> 1877-1878
+                    </p>
+                    <a href="#" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/laculla.jpg" class="card-img-top" alt="Quadro 4">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>La Culla</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Berthe Morisot<br>
+                        <strong>Anno:</strong> 1872
+                    </p>
+                    <a href="#" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/Eva-Gonzalès-Risveglio-mattutino-1876-olio-su-tela-813×100-cm-Kunsthalle-Bremen.jpg" class="card-img-top" alt="Quadro 5">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Risveglio Mattutino</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Eva Gonzalès<br>
+                        <strong>Anno:</strong> 1877 ca.
+                    </p>
+                    <a href="#" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/giornodestate.jpg" class="card-img-top" alt="Quadro 6">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Giorno d'Estate</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Berthe Morisot<br>
+                        <strong>Anno:</strong>1879
+                    </p>
+                    <a href="#" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/1880-mary-cassat-donna-in-nero-allopera..jpg" class="card-img-top" alt="Quadro 7">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Nel Palco ["In the Loge"]</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Mary Cassatt<br>
+                        <strong>Anno:</strong>1878
+                    </p>
+                    <a href="#" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/Lagitainbarca.jpg" class="card-img-top" alt="Quadro 8">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>La Gita In Barca</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Mary Cassatt<br>
+                        <strong>Anno:</strong>1893
+                    </p>
+                    <a href="#" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/Unpalco al Theatre des Italiens.jpg" class="card-img-top" alt="Quadro 9">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Un palco al Theatre des Italiens</strong></h5>
+                    <p class="card-text">
+                        <strong>Artista:</strong> Eva Gonzalès<br>
+                        <strong>Anno:</strong> 1874
+                    </p>
+                    <a href="#" class="btn btn-rosa-scuro">Vedi in dettaglio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+        </div>
+    </div>
+
+    <!-- Sezione impaginazione -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Precedente</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Successiva</a>
+          </li>
+        </ul>
+      </nav>
+
+<!-- Footer -->
+<footer class="custom-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p>&copy; Copyright (c) 2024 by Chiara Fanì |  Licenza Creative Commons | Chiara Fanì IU a.a. 2023/2024</p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <a href="WebProject.html" class="text-white mr-3">| Web Project Plan |</a>
+                <span>Ci trovi anche su:</span>
+                <a href="#" class="text-white ml-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white ml-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white ml-3"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Includi JavaScript di Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
